@@ -1,0 +1,8 @@
+namespace: microservice-app
+
+resources:
+  - namespace.yaml
+  - postgres.yaml
+  - backend.yaml
+  - frontend.yaml
+  - ingress.yaml
