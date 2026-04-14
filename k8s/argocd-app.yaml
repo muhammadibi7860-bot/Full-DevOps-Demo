@@ -1,0 +1,18 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: notes-app
+  namespace: argocd
+spec:
+  project: default
+  source:
+    repoURL: https://github.com/muhammadibi7860-bot/Full-DevOps-Demo.git
+    targetRevision: main
+    path: k8s
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: microservice-app
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
