@@ -27,7 +27,7 @@ spec:
     spec:
       containers:
         - name: frontend
-          image: muhammadibrahim7860/devops-demo-app:frontend-v1
+          image: muhammadibrahim7860/devops-demo-app:frontend-latest
           imagePullPolicy: Always
           ports:
             - containerPort: 80
